@@ -1,0 +1,31 @@
+
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-juego></app-juego> -->
+<!-- <app-login></app-login> -->
+
+<p>
+    <label>Edad uno: </label>
+    <input type="number" [(ngModel)]="edadUno">
+</p>
+
+<p>
+    <label>Edad dos: </label>
+    <input type="number" [(ngModel)]="edadDos">
+</p>
+
+<fieldset id="resultados">
+    <legend>Resultados</legend>
+    <p>
+        <label>Suma: </label>
+        <input type="text" readonly id="suma">
+    </p>
+    
+    <p>
+        <label>Promedio: </label>
+        <input type="text" readonly id="promedio">
+    </p>
+</fieldset>
+
+<br>
+<input type="button" (click)="Calcular(edadUno,edadDos)" value="Calcular">
+<input type="button" (click)="Limpiar()" value="Limpiar cuadros de textos">
